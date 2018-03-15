@@ -14,9 +14,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-# wilsonecosim2
+# wilsonecosim
 
-The goal of wilsonecosim2 is to ...
+Exercises for Simulating Ecological and Evolutionary Systems in C
 
 ## Workflow
 
@@ -27,3 +27,20 @@ The goal of wilsonecosim2 is to ...
 * `document()`
 
 * _Build and Reload_
+
+# Exercises for _Simulating Ecological and Evolutionary Systems in C, Will Wilson, 2000_
+
+## Working Exercises
+```{r }
+library(wilsonecosim)
+
+exercise_2_3_1()
+```
+
+## References
+
+[Rcpp for everyone](https://teuder.github.io/rcpp4everyone_en/)
+
+[Rcpp quick ref](https://cran.r-project.org/web/packages/Rcpp/vignettes/Rcpp-quickref.pdf)
+
+[Adv R - Rcpp](http://adv-r.had.co.nz/Rcpp.html)
