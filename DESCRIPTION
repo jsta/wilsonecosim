@@ -1,9 +1,9 @@
-Package: wilsonecosim2
-Title: What the Package Does (one line, title case)
+Package: wilsonecosim
+Title: Exercises for Simulating Ecological and Evolutionary Systems in C
 Version: 0.1
 Authors@R: person("Joseph", "Stachelek", comment = c(ORCID = "0000-0002-5924-2464"), role = c("aut", "cre"), 
  email = "stachel2@msu.edu")
-Description: What the package does (one paragraph).
+Description: Exercises for: Simulating Ecological and Evolutionary Systems in C.
 Depends: R (>= 3.4.3)
 License: GPL
 Encoding: UTF-8

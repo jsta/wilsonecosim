@@ -5,9 +5,34 @@
 
 using namespace Rcpp;
 
+// exercise_2_3_1
+DataFrame exercise_2_3_1(int MAXTIME, int PRNTTIME);
+RcppExport SEXP _wilsonecosim_exercise_2_3_1(SEXP MAXTIMESEXP, SEXP PRNTTIMESEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< int >::type MAXTIME(MAXTIMESEXP);
+    Rcpp::traits::input_parameter< int >::type PRNTTIME(PRNTTIMESEXP);
+    rcpp_result_gen = Rcpp::wrap(exercise_2_3_1(MAXTIME, PRNTTIME));
+    return rcpp_result_gen;
+END_RCPP
+}
+// exercise_2_6_1
+int exercise_2_6_1(double MAXTIME, int PRNTTIME, double NUMRUNS);
+RcppExport SEXP _wilsonecosim_exercise_2_6_1(SEXP MAXTIMESEXP, SEXP PRNTTIMESEXP, SEXP NUMRUNSSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< double >::type MAXTIME(MAXTIMESEXP);
+    Rcpp::traits::input_parameter< int >::type PRNTTIME(PRNTTIMESEXP);
+    Rcpp::traits::input_parameter< double >::type NUMRUNS(NUMRUNSSEXP);
+    rcpp_result_gen = Rcpp::wrap(exercise_2_6_1(MAXTIME, PRNTTIME, NUMRUNS));
+    return rcpp_result_gen;
+END_RCPP
+}
 // timesTwo
 NumericVector timesTwo(NumericVector x);
-RcppExport SEXP _wilsonecosim2_timesTwo(SEXP xSEXP) {
+RcppExport SEXP _wilsonecosim_timesTwo(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -18,11 +43,13 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_wilsonecosim2_timesTwo", (DL_FUNC) &_wilsonecosim2_timesTwo, 1},
+    {"_wilsonecosim_exercise_2_3_1", (DL_FUNC) &_wilsonecosim_exercise_2_3_1, 2},
+    {"_wilsonecosim_exercise_2_6_1", (DL_FUNC) &_wilsonecosim_exercise_2_6_1, 3},
+    {"_wilsonecosim_timesTwo", (DL_FUNC) &_wilsonecosim_timesTwo, 1},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_wilsonecosim2(DllInfo *dll) {
+RcppExport void R_init_wilsonecosim(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

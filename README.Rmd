@@ -1,0 +1,29 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# wilsonecosim2
+
+The goal of wilsonecosim2 is to ...
+
+## Workflow
+
+### Add a new function
+
+* File -> New File -> C++
+
+* `document()`
+
+* _Build and Reload_
